@@ -520,5 +520,6 @@ negation = Or(negation, And(Not(seqnum_recvdP_L(S)) == True, Not(seqnum_recvdP_S
 
 s.add(negation)
 print(s.check())
+
 if str(s.check()) == 'sat' : 
     print(s.model())

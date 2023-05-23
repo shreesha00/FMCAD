@@ -371,6 +371,8 @@ neg = Or(neg, And(Not(Or(ForAll(N, votedP_L(N, True)), Exists(N, votedP_L(N, Fal
 
 s.add(neg)
 print(s.check())
+
+
 if(str(s.check()) == 'sat') :
     print(s.model())
 

@@ -122,6 +122,7 @@ violation_sim = Or(violation_sim, And(linkP_L(C, VS), Not(linkP_S(sim(C), vs)), 
 sol.add(violation_sim)
 
 print(sol.check())
+
 if(str(sol.check()) == 'sat') :
     print(sol.model())
 

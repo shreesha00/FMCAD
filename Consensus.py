@@ -411,6 +411,7 @@ neg = Or(neg, And(Not(Or(quorum_on_vote_request_msg(A_L, True), quorum_on_vote_r
 
 s.add(neg)
 print(s.check())
+
 if(str(s.check()) == 'sat') :
     f = open('ConsensusModel.txt', 'w')
     with redirect_stdout(f):

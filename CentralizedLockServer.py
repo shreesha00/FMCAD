@@ -296,6 +296,7 @@ negation = Or(negation, And(Not(tailP_L == tailP_S), violation == 7))
 
 s.add(negation)
 print(s.check())
+
 if(str(s.check()) == 'sat') :
     f = open('lock_server_output.txt', 'w')
     with redirect_stdout(f):

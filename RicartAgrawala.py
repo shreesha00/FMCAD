@@ -241,6 +241,8 @@ print(sol.check())
 sol.add(negation)
 
 print(sol.check())
+
+
 if(str(sol.check()) == 'sat') :
     print(sol.model())
 
